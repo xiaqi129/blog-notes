@@ -21,4 +21,5 @@
 | article/div/p \| //span                  | 选取所有属于article元素的div元素的p元素以及文档中所有的span元素 |
 | //span[contains(@class, 'vote-post-up')] | 选取span元素中包含指定class名的元素                          |
 
-***注： .extract()查看selector里面的值**
+***注： .extract()查看selector里面的值;   /text()查看里面文字**
+
