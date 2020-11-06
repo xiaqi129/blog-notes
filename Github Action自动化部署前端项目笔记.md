@@ -14,7 +14,7 @@
 
 ### 2.1创建自己的.yml后缀的配置文件 
 
-![image-20201010104509564](\iamge\action-position.png)
+![image-20201010104509564](./iamge/action-position.png)
 
 ### 2.2指定工作流名称
 
@@ -101,7 +101,7 @@ jobs:
           TARGET: ${{ secrets.REMOTE_TARGET }}
 ```
 
-![image-20201010182717133](\iamge\secrets.png)
+![image-20201010182717133](./iamge/secrets.png)
 
 （***补充注意⚠️\***：**ACCESS_TOKEN** **是服务器ssh密钥对的私钥部分**；**应将服务器公钥部分添加到接收部署的服务器上的authorized_keys文件中**。正常情况下，**ACCESS_TOKEN 是 服务器 ～/.ssh目录下的id_rsa 文件中 的内容**。仔细看一下[https://github.com/marketplac...](https://github.com/marketplace/actions/ssh-deploy#configuration) 文档中的字段配置描述😓）
 
