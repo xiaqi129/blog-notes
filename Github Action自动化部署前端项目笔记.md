@@ -103,6 +103,13 @@ jobs:
 
 ![image-20201010182717133](./iamge/secrets.png)
 
+| KEY           | Value                        |
+| ------------- | ---------------------------- |
+| ACCESS_TOKEN  | 服务器私钥部分               |
+| REMOTE_HOST   | 服务器IP地址                 |
+| REMOTE_TARGET | 期望打包后存放在服务器的路径 |
+| REMOTE_USER   | 服务器用户名                 |
+
 （***补充注意⚠️\***：**ACCESS_TOKEN** **是服务器ssh密钥对的私钥部分**；**应将服务器公钥部分添加到接收部署的服务器上的authorized_keys文件中**。正常情况下，**ACCESS_TOKEN 是 服务器 ～/.ssh目录下的id_rsa 文件中 的内容**。仔细看一下[https://github.com/marketplac...](https://github.com/marketplace/actions/ssh-deploy#configuration) 文档中的字段配置描述😓）
 
 如果在远端服务器中生成过了密钥，那么也需要copy一份`id_rsa.pub`为`authorized_keys`文件，为的是方便github的虚拟服务器可以登录上来。
